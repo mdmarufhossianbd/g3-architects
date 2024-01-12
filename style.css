@@ -40,17 +40,19 @@ nav ul li a {
 }
 
 /* banner section */
-.banner_title,
-.banner_description {
-    width: 862px;
-    margin: auto;
+.banner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 295px 32px;
     text-align: center;
 }
 
 .banner_title {
     margin-top: 102px;
     color: #131313;
-    font-size: 64px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -67,4 +69,61 @@ nav ul li a {
     border-style: none;
     padding: 20px 25px;
     margin: 32px 600px 50px;
+}
+
+
+
+/* responsive styles */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .banner {
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary_btn {
+        margin: 10px 150px 12px;
+    }
+
+    .banner_content {
+        padding: 20px;
+    }
+
+    .banner_title {
+        font-size: 2rem;
+    }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .primary_btn {
+        justify-content: center;
+        margin: 10px auto 12px;
+    }
+
 }
