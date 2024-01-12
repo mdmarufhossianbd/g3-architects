@@ -121,6 +121,20 @@ nav ul li a {
         width: 100%;
     }
 
+    .banner_title {
+        margin: auto;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_content {
+        padding: 50px 120px 16px;
+    }
+
     .primary_btn {
         justify-content: center;
         margin: 10px auto 12px;
